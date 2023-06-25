@@ -1,0 +1,181 @@
+.container-50 a:visited {
+    color: #151515;
+    ;
+}
+
+/* Animação do botão de compra */
+.offer button:active {
+    transform: scale(.8);
+    transition: 200ms;
+}
+
+/* Animação dos sapatos ao clicar */
+.container-shoe img:active {
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+/* Animação ao clicar nas fotos dos esportes */
+.gallery-images img:active {
+    filter: brightness(1);
+}
+
+/* Animação ao clicar nos links do final da página */
+.connected-imgs a:active {
+    transform: scale(.8);
+    transition: 200ms;
+}
+
+/* Animação ao clicar nos links do final da página */
+.shops a:active {
+    color: #4d70e4;
+}
+
+/* Animação ao clicar nos links do final da página */
+.information a:active {
+    color: #4d70e4;
+}
+
+/* Animação ao clicar nas marcas */
+.container-brands img:active {
+    transform: scale(1.06);
+    filter: contrast(2.5);
+    transition: 300ms;
+}
+
+/* Animação ao clicar nos links das redes sociais ao final da página */
+.connected-imgs img:active {
+    background-color: #88a1f1;
+    transition: 200ms;
+}
+
+/* Classe que faz com que ao clicar no menu, ele ocupe todo o tamanho da tela */
+.height-100 {
+    height: 100vh;
+}
+
+/* Classe que alinha o menu e a logo para não ficarem no meio da página */
+.align {
+    align-self: flex-start;
+}
+
+.nav-display {
+    display: flex;
+}
+
+.containers-img>div>img {
+    height: 30px;
+}
+
+.rotate {
+    animation: rotate .5s forwards;
+}
+
+.left-right {
+    animation: left-right .7s ease;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes left-right {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes growing {
+    0% {
+        transform: scale(.5);
+        opacity: 0;
+    }
+}
+
+.offer button {
+    animation: growing 1s ease;
+}
+
+.banner > div{
+    animation: left-right 1s 100ms ease;
+}
+.container-shoe > .shoe{
+    animation: growing 1s ease;
+}
+.container-50{
+    animation: growing 1s 100ms ease;
+}
+
+@media(min-width:1023px) {
+
+    .nav-site a:hover {
+        opacity: .6;
+        transition: 400ms;
+    }
+
+    .nav-social-media a:hover {
+        opacity: .6;
+        transition: 400ms;
+    }
+    .nav-social-media a:active{
+        transform: scale(.7);
+        transition: 100ms;
+    }
+
+    .offer button:hover {
+        background-color: #4d70e4;
+        transition: 300ms;
+    }
+
+    .container-shoe img:hover {
+        transform: scale(1.2);
+        transition: 600ms;
+    }
+
+    .gallery-images img:hover {
+        filter: brightness(1);
+        transition: 300ms;
+    }
+
+    .container-brands .brand:hover {
+        filter: contrast(3);
+        transform: scale(1.02);
+        transition: 500ms;
+    }
+
+    .information a:hover {
+        color: #2563eb;
+        transition: 400ms;
+    }
+
+    .shops a:hover {
+        color: #2563eb;
+        transition: 400ms;
+    }
+
+    .connected-imgs a:hover {
+        color: #2563eb;
+        transition: 400ms;
+    }
+
+    .connected-imgs img:hover {
+        background-color:#4c7de7;
+        transition: 400ms;
+    }
+    .connected-imgs img:active{
+        transform: scale(.8);
+        transition: 100ms;
+    }
+}
